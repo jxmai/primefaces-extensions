@@ -132,6 +132,7 @@ public class OrgChartRenderer extends CoreRenderer {
         writer.writeAttribute("id", clientId, "id");
         writer.writeAttribute(HTML.WIDGET_VAR, widgetVar, null);
         writer.writeAttribute(Attrs.CLASS, styleClass, "styleClass");
+
         if (orgChart.getStyle() != null) {
             writer.writeAttribute(Attrs.STYLE, orgChart.getStyle(), Attrs.STYLE);
         }

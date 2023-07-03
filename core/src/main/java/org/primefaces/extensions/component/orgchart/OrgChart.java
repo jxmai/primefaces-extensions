@@ -51,6 +51,7 @@ import org.primefaces.util.Constants;
 @ResourceDependency(library = "primefaces-extensions", name = "primefaces-extensions.js")
 @ResourceDependency(library = "primefaces-extensions", name = "orgchart/orgchart.js")
 @ResourceDependency(library = "primefaces-extensions", name = "orgchart/orgchart.css")
+@ResourceDependency(library = "primefaces-extensions", name = "orgchart/style.css")
 public class OrgChart extends UIData implements Widget, ClientBehaviorHolder {
 
     public static final String STYLE_CLASS = "ui-orgchart ";
