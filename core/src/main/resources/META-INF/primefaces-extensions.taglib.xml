@@ -12946,4 +12946,66 @@ See showcase for an example. Default null.]]>
             <type>java.lang.String</type>
         </attribute>
     </tag>
+    <tag>
+        <description><![CDATA[Highlights occurrences of a keyword within a target container using mark.js. Based on https://markjs.io/.]]></description>
+        <tag-name>markText</tag-name>
+        <component>
+            <component-type>org.primefaces.extensions.component.MarkText</component-type>
+            <renderer-type>org.primefaces.extensions.component.MarkTextRenderer</renderer-type>
+        </component>
+        <attribute>
+            <description><![CDATA[Unique identifier of the widget instance, used for client-side scripting.]]></description>
+            <name>widgetVar</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+         <attribute>
+            <description><![CDATA[A PrimeFaces Search Expression (PFS) resolving to the client ID(s) or jQuery selector for the container element(s) where marking should occur. E.g., '@(.myContent)', 'myForm:myPanel'. This attribute is required.]]></description>
+            <name>target</name>
+            <required>true</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[The keyword or phrase to highlight. Can be bound to a backing bean property using a ValueExpression.]]></description>
+            <name>keyword</name>
+            <required>false</required> 
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[CSS style class to apply to the generated highlight elements (e.g., <mark class='myHighlight'>).]]></description>
+            <name>highlightStyleClass</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[HTML element tag name used to wrap highlights. Default is 'mark'.]]></description>
+            <name>element</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Perform a case-sensitive search. Default is false.]]></description>
+            <name>caseSensitive</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Ignore diacritical marks during search (e.g., 'cafe' matches 'café'). Default is true.]]></description>
+            <name>diacritics</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[Search accuracy: 'partially' (substrings), 'complementary', 'exactly'. Default is 'partially'.]]></description>
+            <name>accuracy</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+        </attribute>
+         <attribute>
+            <description><![CDATA[Treat the keyword string as separate words to search for individually. Default is false (search for the exact phrase/word).]]></description>
+            <name>separateWordSearch</name>
+            <required>false</required>
+            <type>java.lang.Boolean</type>
+        </attribute>
+   </tag>
 </facelet-taglib>
