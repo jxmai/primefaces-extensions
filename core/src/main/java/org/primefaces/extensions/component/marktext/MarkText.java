@@ -22,7 +22,6 @@
 package org.primefaces.extensions.component.marktext;
 
 import javax.faces.application.ResourceDependency;
-import javax.faces.component.FacesComponent;
 import javax.faces.component.UIComponentBase;
 
 import org.primefaces.component.api.Widget;
